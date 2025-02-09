@@ -21921,7 +21921,19 @@ span.select2-selection.select2-selection--single:focus {
     padding: 0;
   }
 }
-
+@media (max-width: 900px) {
+  .header-default .header-logo {
+    background: transparent;
+ font-family: 'Audiowide', cursive;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: -10px;  }
+}
 [dir="rtl"] .footer-widget .widget_title:before, [dir="rtl"] .footer-widget .widget_title:after {
   left: auto;
   right: 0;

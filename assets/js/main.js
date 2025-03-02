@@ -32,16 +32,7 @@
     /*
 
   /*---------- 01. On Load Function ----------*/
-    $(window).on("load", function () {
-        $(".preloader").fadeOut();
-    });
-    document.addEventListener("contextmenu", (event) => event.preventDefault());
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
-            event.preventDefault();
-        }
-    });
-
+  
     /*---------- 02. Preloader ----------*/
     if ($(".preloader").length > 0) {
         $(".preloaderCls").each(function () {
@@ -984,30 +975,7 @@
         }
     });
 
-    /*----------- 00. Right Click Disable ----------*/
-    window.addEventListener('contextmenu', function (e) {
-        // do something here...
-        e.preventDefault();
-    }, false);
-
-    /*----------- 00. Inspect Element Disable ----------*/
-    document.onkeydown = function (e) {
-        if (event.keyCode == 123) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-            return false;
-        }
-    }
+  
 
 })(jQuery);
 

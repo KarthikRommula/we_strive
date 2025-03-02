@@ -21921,6 +21921,7 @@ span.select2-selection.select2-selection--single:focus {
     padding: 0;
   }
 }
+
 @media (max-width: 900px) {
   .header-default .header-logo {
     background: transparent;
